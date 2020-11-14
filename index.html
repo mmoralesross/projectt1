@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Rijksmuseum Art Randomizer</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                
+                <!--Css external file link-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+                <!--Jquery Link-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Javascript external file link-->
+    <script src="script.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body>
+    
+
+        <nav>
+            <div class="nav-wrapper blue-grey">
+                <a class="brand-logo">
+                        <img src="Assets/Rijksmuseum logo 2012.png" alt="Logo" id="museumLogo">
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <a class="waves-effect waves-light btn-small indigo darken-4" id="viewCollection"><i class="material-icons right">palette</i>View Collection</a>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <a class="waves-effect waves-light btn indigo darken-4" id="submitBtn">Get Art</a>
+
+          <!-- Modal Structure -->
+  <div id="showArt" class="modal">
+    <div class="modal-content">
+      <h3 class="modal-card-title"></h3>
+      <p>
+        <img id="displayImg" class="responsive-img" alt="Sorry there is no image for this artwork">
+      </p>
+      <p id="title"></p>
+      <p id="maker"></p>
+      <p id="nationality"></p>
+      <p id="placeOfOrigin"></p>
+      <p id="yearCreated"></p>
+      <p id="medium"></p>
+      <p id="description"></p>
+    </div>
+    <div class="modal-footer">
+      <a id="alertSuccess"></a>
+      <a id="addArt" class="waves-green btn-flat green">Add to Collection</a>
+      <a id="nextPiece" class="waves-effect waves-blue btn-flat light-blue lighten-3">Next Piece</a>
+      <a id="closeModal" class="waves-effect waves-blue btn-flat red lighten-2 modal-close">Close</a>
+    </div>
+  </div>
+
+  <div id="showCollection" class="modal">
+    <div class="modal-content">
+      <h4 class="modal-card-title">Your Collection</h4>
+      <div id="yourCollection"></div>
+    </div>
+  </div>
+
+</body>
+</html>
